@@ -17,9 +17,9 @@ const showTasks = async () => {
     }
     const allTasks = tasks
       .map((task) => {
-        const { completed, _id: taskID, name } = task
+        const { completed, _id: taskID, name,updatedAt } = task
         return `<div class="single-task ${completed && 'task-completed'}">
-<h5><span><i class="far fa-check-circle"></i></span>${name}</h5>
+<h5><span><i class="far fa-check-circle"></i></span>${name}</h5>${updatedAt}
 <div class="task-links">
 
 
@@ -83,5 +83,5 @@ formDOM.addEventListener('submit', async (e) => {
   setTimeout(() => {
     formAlertDOM.style.display = 'none'
     formAlertDOM.classList.remove('text-success')
-  }, 3000)
+  }, 9000)
 })
