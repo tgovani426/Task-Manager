@@ -1,4 +1,9 @@
 {
+  "name": "Task-manager",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "postinstall": "npm run build",
     "start": "node server.js",
